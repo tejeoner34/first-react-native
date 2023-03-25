@@ -10,7 +10,8 @@ interface Props {
 export const Tab = ({title, position = 'br', onPress}: Props) => {
   return (
     <TouchableOpacity
-      style={position === 'br' ? styles.fabRight: styles.fabLeft}
+      activeOpacity={0.7}
+      style={position === 'br' ? styles.fabRight : styles.fabLeft}
       onPress={onPress}>
       <View style={styles.fab}>
         <Text style={styles.fabText}>{title}</Text>
